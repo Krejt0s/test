@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{lyluatex}
+
+\begin{document}
+
+\section*{Atlas, Rise! -- Gitara prowadząca}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \clef "treble_8"
+      \key e \minor
+      \time 4/4
+      e8 e e g a g e d |
+      e4 r8 e g a b a |
+    }
+    \new TabStaff {
+      \tabFullNotation
+      e8 e e g a g e d |
+      e4 r8 e g a b a |
+    }
+  >>
+  \layout { }
+}
+\end{lilypond}
+
+\end{document}
